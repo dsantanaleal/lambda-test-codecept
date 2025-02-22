@@ -1,0 +1,11 @@
+name: CI Test pipeline
+
+on: [push, pull_request]
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Check
+              run: echo 'Running test pipeline'
